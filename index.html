@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Saturn's Meat — Japanese Fine Dining · Shinjuku, Tokyo</title>
+  <meta name="description" content="Saturn's Meat is an exclusive Japanese fine dining experience in Shinjuku, Tokyo. Summer Omakase course crafted by Head Chef Yami Chihara. An otherworldly culinary journey." />
+  <link rel="stylesheet" href="index.css" />
+</head>
+<body>
+
+  <!-- Subtle starfield -->
+  <canvas id="starfield" aria-hidden="true"></canvas>
+
+  <!-- ===== NAVIGATION ===== -->
+  <nav class="nav" id="mainNav">
+    <div class="container">
+      <a href="#" class="nav__logo" id="navLogo">Saturn's Meat</a>
+      <ul class="nav__links" id="navLinks">
+        <li><a href="#reviews" id="navReviews">Reviews</a></li>
+        <li><a href="#menu" id="navMenu">Menu</a></li>
+        <li><a href="#crew" id="navCrew">Crew</a></li>
+        <li><a href="https://www.kickstarter.com/projects/kev82/saturns-meat" target="_blank" rel="noopener" class="nav__cta" id="navReserve">Reserve</a></li>
+      </ul>
+      <button class="nav__hamburger" id="navHamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ===== HERO ===== -->
+  <header class="hero" id="hero">
+    <div class="hero__logo-wrap">
+      <p class="hero__tagline">Shinjuku · Tokyo</p>
+      <p class="hero__jp">土星の肉</p>
+      <h1 class="hero__title" id="heroTitle">
+        Saturn's Meat
+        <span class="hero__star-orbit" id="starOrbit" aria-hidden="true">
+          <span class="shooting-star" id="shootingStar"></span>
+        </span>
+      </h1>
+      <p class="hero__subtitle">An otherworldly fine dining experience</p>
+    </div>
+    <div class="hero__scroll">
+      <span>Scroll</span>
+      <div class="hero__scroll-line"></div>
+    </div>
+  </header>
+
+  <!-- ===== REVIEWS ===== -->
+  <section class="reviews section-pad" id="reviews">
+    <div class="container">
+      <div class="reviews__header reveal">
+        <p class="section-label">What They Say</p>
+        <h2 class="section-title">Guest Reviews</h2>
+        <p class="section-title-jp">お客様の声</p>
+        <div class="divider"></div>
+      </div>
+
+      <div class="reviews__grid">
+        <!-- Review 1 -->
+        <article class="review-card reveal" id="reviewCard1">
+          <div class="review-card__stars">
+            <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+          </div>
+          <blockquote class="review-card__quote">
+            The chawanmushi with wagyu and black truffle was like nothing I've ever tasted. It was as if the flavors orbited around each other in perfect harmony. This is truly food from another world.
+          </blockquote>
+          <div class="review-card__author">
+            <strong>Isabella M.</strong>
+            Traveled from Milan, Italy
+          </div>
+          <span class="review-card__tag">Verified Guest</span>
+        </article>
+
+        <!-- Review 2 -->
+        <article class="review-card reveal" id="reviewCard2">
+          <div class="review-card__stars">
+            <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+          </div>
+          <blockquote class="review-card__quote">
+            Every course arrived like a small planet — self-contained, beautiful, and mysteriously delicious. The ayu over binchotan was ethereal. I felt like I left Earth for two hours.
+          </blockquote>
+          <div class="review-card__author">
+            <strong>James T.</strong>
+            Food critic, The Tokyo Review
+          </div>
+          <span class="review-card__tag">Press</span>
+        </article>
+
+        <!-- Review 3 -->
+        <article class="review-card reveal" id="reviewCard3">
+          <div class="review-card__stars">
+            <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+          </div>
+          <blockquote class="review-card__quote">
+            True delicacy that tastes out of the world. Chef Yami's secret recipes elevate Japanese cuisine to a celestial level. Every dish tells a story that transcends the plate.
+          </blockquote>
+          <div class="review-card__author">
+            <strong>The Food Guide</strong>
+            Annual Dining Awards
+          </div>
+          <span class="review-card__tag">Featured Review</span>
+        </article>
+
+        <!-- Review 4 -->
+        <article class="review-card reveal" id="reviewCard4">
+          <div class="review-card__stars">
+            <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+          </div>
+          <blockquote class="review-card__quote">
+            We came for the omakase, but we stayed for the experience. The staff — especially Eve — made us feel like honored guests in someone's home. The mizumono dessert was poetry in a bowl.
+          </blockquote>
+          <div class="review-card__author">
+            <strong>Hans & Lena K.</strong>
+            Traveled from Munich, Germany
+          </div>
+          <span class="review-card__tag">Verified Guest</span>
+        </article>
+
+        <!-- Review 5 -->
+        <article class="review-card reveal" id="reviewCard5">
+          <div class="review-card__stars">
+            <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+          </div>
+          <blockquote class="review-card__quote">
+            I've dined at three-stars across Paris and Tokyo — Saturn's Meat stands apart. The hirame usuzukuri was a transcendent experience. You don't eat here, you orbit something greater.
+          </blockquote>
+          <div class="review-card__author">
+            <strong>Marie L.</strong>
+            Michelin inspector (retired)
+          </div>
+          <span class="review-card__tag">Industry</span>
+        </article>
+
+        <!-- Review 6 -->
+        <article class="review-card reveal" id="reviewCard6">
+          <div class="review-card__stars">
+            <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+          </div>
+          <blockquote class="review-card__quote">
+            My first time trying traditional kaiseki — Nicholas guided me through every course with warmth and knowledge. By the end, I was moved. An experience that's genuinely beyond this world.
+          </blockquote>
+          <div class="review-card__author">
+            <strong>David R.</strong>
+            Traveled from New York, USA
+          </div>
+          <span class="review-card__tag">Verified Guest</span>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== MENU (Omakase) ===== -->
+  <section class="menu section-pad" id="menu">
+    <div class="container">
+      <div class="menu__header reveal">
+        <p class="section-label">The Menu</p>
+        <h2 class="menu__course-title">Summer Omakase Course</h2>
+        <p class="menu__course-jp">夏のお任せ</p>
+        <div class="divider"></div>
+        <p class="menu__price">¥38,000</p>
+        <p class="menu__sake">Sake pairing available · ¥12,000</p>
+      </div>
+
+      <div class="menu__courses reveal">
+        <!-- 01 -->
+        <div class="course-item">
+          <span class="course-item__number">01</span>
+          <div>
+            <p class="course-item__jp">先付</p>
+            <p class="course-item__en">Sakizuke</p>
+            <p class="course-item__name">Chilled silken tofu</p>
+            <p class="course-item__desc">Dashi jelly · yuzu zest · shiso</p>
+          </div>
+        </div>
+
+        <!-- 02 -->
+        <div class="course-item">
+          <span class="course-item__number">02</span>
+          <div>
+            <p class="course-item__jp">八寸</p>
+            <p class="course-item__en">Hassun</p>
+            <p class="course-item__name">Sweet shrimp · sudachi</p>
+          </div>
+        </div>
+
+        <!-- 03 -->
+        <div class="course-item">
+          <span class="course-item__number">03</span>
+          <div>
+            <p class="course-item__jp">吸い物</p>
+            <p class="course-item__en">Suimono</p>
+            <p class="course-item__name">Hamaguri clam soup</p>
+            <p class="course-item__desc">Mitsuba · yuzu peel</p>
+          </div>
+        </div>
+
+        <!-- 04 -->
+        <div class="course-item">
+          <span class="course-item__number">04</span>
+          <div>
+            <p class="course-item__jp">向付</p>
+            <p class="course-item__en">Mukozuke</p>
+            <p class="course-item__name">Hirame usuzukuri</p>
+            <p class="course-item__desc">Ponzu · momiji oroshi · chrysanthemum</p>
+          </div>
+        </div>
+
+        <!-- 05 -->
+        <div class="course-item">
+          <span class="course-item__number">05</span>
+          <div>
+            <p class="course-item__jp">炊き合わせ</p>
+            <p class="course-item__en">Takiawase</p>
+            <p class="course-item__name">Simmered taro · green beans · fu</p>
+            <p class="course-item__desc">Seasoned dashi · kampyo</p>
+          </div>
+        </div>
+
+        <!-- 06 -->
+        <div class="course-item">
+          <span class="course-item__number">06</span>
+          <div>
+            <p class="course-item__jp">蓋物</p>
+            <p class="course-item__en">Futamono</p>
+            <p class="course-item__name">Chawanmushi</p>
+            <p class="course-item__desc">Wagyu · ginkgo · black truffle · ankake</p>
+          </div>
+        </div>
+
+        <!-- 07 -->
+        <div class="course-item">
+          <span class="course-item__number">07</span>
+          <div>
+            <p class="course-item__jp">焼き物</p>
+            <p class="course-item__en">Yakimono</p>
+            <p class="course-item__name">Salt-grilled ayu</p>
+            <p class="course-item__desc">Binchotan · tadezu vinegar</p>
+          </div>
+        </div>
+
+        <!-- 08 -->
+        <div class="course-item">
+          <span class="course-item__number">08</span>
+          <div>
+            <p class="course-item__jp">強肴</p>
+            <p class="course-item__en">Shiizakana</p>
+            <p class="course-item__name">Shijimi clams</p>
+            <p class="course-item__desc">Yuba · myoga · sesame</p>
+          </div>
+        </div>
+
+        <!-- 09 -->
+        <div class="course-item">
+          <span class="course-item__number">09</span>
+          <div>
+            <p class="course-item__jp">御飯</p>
+            <p class="course-item__en">Gohan</p>
+            <p class="course-item__name">Koshihikari rice</p>
+            <p class="course-item__desc">Aka-dashi · seasonal tsukemono</p>
+          </div>
+        </div>
+
+        <!-- 10 -->
+        <div class="course-item">
+          <span class="course-item__number">10</span>
+          <div>
+            <p class="course-item__jp">水物</p>
+            <p class="course-item__en">Mizumono</p>
+            <p class="course-item__name">White peach compote</p>
+            <p class="course-item__desc">Shiso granita · kinako</p>
+          </div>
+        </div>
+      </div>
+
+      <p class="menu__note reveal">
+        Guests are kindly asked to place their trust entirely in the chef.<br />
+        No requests, no substitutions.<br />
+        Only the season, and what it offers.
+      </p>
+    </div>
+  </section>
+
+  <!-- ===== CREW ===== -->
+  <section class="crew section-pad" id="crew">
+    <div class="container">
+      <div class="crew__header reveal">
+        <p class="section-label">The People</p>
+        <h2 class="section-title">Our Crew</h2>
+        <p class="section-title-jp">スタッフ紹介</p>
+        <div class="divider"></div>
+      </div>
+
+      <!-- Reiko Onigahara — Founder -->
+      <div class="crew-member" id="crewReiko">
+        <div class="crew-member__image-wrap">
+          <img src="images/reiko.webp" alt="Reiko Onigahara, Founder of Saturn's Meat" />
+        </div>
+        <div class="crew-member__text">
+          <p class="crew-member__role">Founder & Leader</p>
+          <h3 class="crew-member__name">Reiko Onigahara</h3>
+          <p class="crew-member__bio">
+            The leader and mastermind behind the operation of Saturn's Meat. Reiko started this restaurant through a fundraiser from her connections, with Yami soon joining her, the restaurant grew quickly to success.
+          </p>
+        </div>
+      </div>
+
+      <!-- Yami Chihara — Head Chef -->
+      <div class="crew-member" id="crewYami">
+        <div class="crew-member__image-wrap">
+          <img src="images/yami.webp" alt="Yami Chihara, Head Chef" />
+        </div>
+        <div class="crew-member__text">
+          <p class="crew-member__role">Head Chef</p>
+          <h3 class="crew-member__name">Yami Chihara</h3>
+          <p class="crew-member__bio">
+            Our head chef with over a decade of experience in cooking for fine dining restaurants, Yami brings out the true essence of the Japanese cuisine and his own secret recipes elevate them further to an otherworldly level, often quoted as the pride and heart of Saturn's Meat, Yami's food will have you licking your fingers and craving for more.
+          </p>
+        </div>
+      </div>
+
+      <!-- Eve Hoshina — Lead Service -->
+      <div class="crew-member" id="crewEve">
+        <div class="crew-member__image-wrap">
+          <img src="images/eve.webp" alt="Eve Hoshina, Lead Service" />
+        </div>
+        <div class="crew-member__text">
+          <p class="crew-member__role">Lead Service</p>
+          <h3 class="crew-member__name">Eve Hoshina</h3>
+          <p class="crew-member__bio">
+            Our leading service person for waiters, Eve has years of experience at Saturn's Meat and understands the true essence of Japanese fine dining. Customers will feel welcomed by her, as her experience will make sure that they have a fun and comfortable time in this area.
+          </p>
+        </div>
+      </div>
+
+      <!-- Nicholas — Catering -->
+      <div class="crew-member" id="crewNicholas">
+        <div class="crew-member__image-wrap">
+          <img src="images/nicholas.webp" alt="Nicholas, Catering Specialist" />
+        </div>
+        <div class="crew-member__text">
+          <p class="crew-member__role">Catering</p>
+          <h3 class="crew-member__name">Nicholas</h3>
+          <p class="crew-member__bio">
+            With his bright skills at catering, Nicholas here makes sure that your order reaches you within time. With him being fluent in German, French, Spanish, English and Japanese, Nicholas tends to be quick at understanding the needs of the tourists trying out Japanese cuisine for the first time.
+          </p>
+        </div>
+      </div>
+
+      <!-- Charlotte Grove — Waiter -->
+      <div class="crew-member" id="crewCharlotte">
+        <div class="crew-member__image-wrap">
+          <img src="images/charlotte.webp" alt="Charlotte Grove, Waiter" />
+        </div>
+        <div class="crew-member__text">
+          <p class="crew-member__role">Waiter</p>
+          <h3 class="crew-member__name">Charlotte Grove</h3>
+          <p class="crew-member__bio">
+            Welcoming our newest crew member, Charlotte is from London, Britain. At just 21 years of age, Charlotte already has shown great potential in the fine dining industry and has prior experience at working in restaurants in Britain. A bright and cheerful girl who will make sure that you feel welcome right here in Saturn's Meat.
+          </p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer" id="footer">
+    <div class="container">
+      <div class="footer__reservation reveal">
+        <p class="section-label">Begin Your Journey</p>
+        <h2 class="section-title">Make a Reservation</h2>
+        <div class="divider divider--red"></div>
+        <p class="footer__address">Shinjuku, Tokyo</p>
+        <p class="footer__address-jp">新宿 · 東京</p>
+        <a href="https://www.kickstarter.com/projects/kev82/saturns-meat" target="_blank" rel="noopener" class="btn-reserve" id="reserveBtn">
+          Make a Reservation
+        </a>
+      </div>
+      <div class="footer__bottom">
+        <p>&copy; 2026 Saturn's Meat. All rights reserved.</p>
+        <div class="footer__bottom-links">
+          <a href="#reviews">Reviews</a>
+          <a href="#menu">Menu</a>
+          <a href="#crew">Crew</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="index.js"></script>
+</body>
+</html>
